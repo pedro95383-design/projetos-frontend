@@ -1,0 +1,126 @@
+@import url("variables.css");
+@import url("components/navbar.css");
+@import url("components/button.css");
+@import url("components/product-card.css");
+@import url("components/contact-form.css");
+
+body {
+  box-sizing: border-box;
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 12px 12px 32px;
+  background: #f3f1ee;
+  color: var(--color-ink);
+  font-family: var(--font-family);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-ink);
+}
+
+h1 {
+  margin: 0 0 14px;
+  font-size: 2.35rem;
+  line-height: 1.15;
+}
+
+h2 {
+  margin: 0 0 18px;
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  margin: 0 0 8px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+main {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.page-intro {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0;
+  padding: 34px;
+  background: var(--color-surface);
+}
+
+.page-intro__content,
+.page-intro__image {
+  flex: 1;
+}
+
+.page-intro__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.page-intro__eyebrow {
+  margin: 0 0 12px;
+  color: var(--color-muted);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
+
+.page-intro__text {
+  max-width: 420px;
+  margin: 0 0 18px;
+  color: var(--color-muted);
+  font-size: 0.98rem;
+}
+
+.section {
+  margin: 0;
+  padding: 32px 34px;
+  background: #fbf2eb;
+}
+
+.section h2 {
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  body { padding: 24px 24px 48px; }
+  main { padding-top: 70px; }
+  .page-intro { align-items: center; flex-direction: row; padding: 34px; }
+  .page-intro__image { width: 50%; }
+  .section { padding: 32px 34px; }
+  .button-row { align-items: center; flex-direction: row; }
+}
+
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 10;
+}
+
+@media (min-width: 1024px) {
+  h1 { font-size: 2.35rem; }
+  .page-intro { padding: 38px 42px; }
+}
+
+

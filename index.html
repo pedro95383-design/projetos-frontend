@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spa Sereno</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar--fixed">
+    <a class="navbar__logo" href="#inicio">SPA SERENO</a>
+    <ul class="navbar__menu">
+      <li class="navbar__item"><a class="navbar__link navbar__link--active" href="#colecao">Tratamentos</a></li>
+      <li class="navbar__item"><a class="navbar__link" href="#botoes">Espaço</a></li>
+      <li class="navbar__item"><a class="navbar__link" href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main id="inicio">
+    <header class="page-intro">
+      <div class="page-intro__content">
+        <p class="page-intro__eyebrow">SPA • BEM-ESTAR • DESCANSO</p>
+        <h1>Um lugar para desacelerar.</h1>
+        <p class="page-intro__text">Cuidados especiais e momentos de descanso em um espaço pensado para você.</p>
+        <a class="btn btn--primary btn--large" href="#colecao">CONHEÇA O SPA</a>
+      </div>
+      <img class="page-intro__image" src="assets/caneca-arco.svg" alt="Xícara de chá em tons naturais" width="600"
+        height="400">
+    </header>
+
+    <section class="section" id="botoes">
+      <h2>Botões</h2>
+      <div class="button-row">
+        <button class="btn btn--primary btn--large" type="button">Ação principal</button>
+        <button class="btn btn--secondary" type="button">Ação secundária</button>
+        <button class="btn btn--danger btn--small" type="button">Remover item</button>
+      </div>
+    </section>
+
+    <section class="section" id="colecao">
+      <h2>Para cuidar de você</h2>
+      <div class="product-grid">
+        <article class="product-card product-card--featured">
+          <img class="product-card__image" src="assets/caneca-arco.svg" alt="Chá servido em uma caneca" width="600"
+            height="400">
+          <div class="product-card__content">
+            <span class="product-card__badge product-card__badge--featured">CHÁ</span>
+            <h3 class="product-card__title">Chá Premium</h3>
+            <p class="product-card__price">R$ 67,99</p>
+            <button class="btn btn--primary product-card__button" type="button">Conheça</button>
+          </div>
+        </article>
+
+        <article class="product-card product-card--luxury">
+          <img class="product-card__image" src="assets/luminaria-lua.svg" alt="Ambiente de descanso com luz suave"
+            width="600" height="400">
+          <div class="product-card__content">
+            <span class="product-card__badge product-card__badge--sold">EXPERIÊNCIA</span>
+            <h3 class="product-card__title">Espaço Lazer Premium</h3>
+            <p class="product-card__price">R$ 999,99</p>
+            <button class="btn btn--secondary product-card__button" type="button">Conheça</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <h2>Fale com a gente</h2>
+      <form class="contact-form contact-form--compact">
+        <div class="contact-form__field">
+          <label class="contact-form__label" for="email">E-mail</label>
+          <input class="contact-form__input" id="email" name="email" type="email" placeholder="voce@exemplo.com"
+            required title="Digite um e-mail válido, como nome@exemplo.com.">
+        </div>
+        <button class="btn btn--primary contact-form__button contact-form__button--full" type="submit">Enviar
+          mensagem</button>
+      </form>
+    </section>
+  </main>
+  <a class="btn btn--secondary btn--small back-to-top" href="#inicio">Voltar ao topo</a>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+:root {
+  --color-primary: #111111;
+  --color-primary-dark: #333333;
+  --color-ink: #171513;
+  --color-muted: #615d59;
+  --color-background: #ffffff;
+  --color-surface: #ffffff;
+  --color-line: #dedbd7;
+  --color-soft: #efedea;
+  --color-danger: #c24743;
+  --color-danger-soft: #fff0ed;
+  --color-accent: #d59a4c;
+  --font-family: Georgia, "Times New Roman", serif;
+  --radius-small: 0;
+  --radius-medium: 0;
+  --radius-large: 0;
+  --shadow-card: none;
+}
